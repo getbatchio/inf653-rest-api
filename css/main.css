@@ -22,13 +22,13 @@ input[type='submit'] {
   margin-bottom: 5px;
 }
 #content,
-table {
+table, th, td {
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 @media only screen and (max-width: 650px) {
   form {
