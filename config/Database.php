@@ -6,10 +6,10 @@
             $this->conn = null;
             $url = getenv('JAWSDB_MARIA_URL');
             $dbparts = parse_url($url);
-            $hostname = $dbparts['host'];
-            $username = $dbparts['user'];
-            $password = $dbparts['pass'];
-            $database = ltrim($dbparts['path'],'/');
+            $hostname = getenv('hostname');
+            $username = getenv('username');
+            $password = getenv('password');
+            $database = getenv('database');
             $dsn = "mysql:host={$hostname};dbname={$database}";
             try {
                 $this->conn = new PDO($dsn, $username, $password);
