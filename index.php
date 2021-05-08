@@ -38,7 +38,7 @@
                     ?>
                 </select>
                 <input type = "submit" class="btn btn-primary" />
-                <input type = "submit" id="resetQuotesListForm" type="reset" class="btn btn-ptimary">
+                <input id="resetQuotesListForm" type="reset" class="btn btn-ptimary" />
             </form>
             <table class="table table-hover">
                 <tr>
